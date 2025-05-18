@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form Pendaftaran</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 480px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #f8f8f8;
+    }
+    form {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 8px 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+    }
+    .gender-group {
+      margin-top: 8px;
+    }
+    .gender-group label {
+      font-weight: normal;
+      margin-right: 12px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      margin-top: 25px;
+      padding: 10px 22px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      margin-right: 15px;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    input[type="reset"] {
+      background-color: #e0e0e0;
+      color: #555;
+    }
+    input[type="reset"]:hover {
+      background-color: #c2c2c2;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <label for="npm">NPM</label>
+    <input type="text" id="npm" name="npm" required />
+
+    <label for="fullname">Fullname</label>
+    <input type="text" id="fullname" name="fullname" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required />
+
+    <label for="placebirth">Place Birth</label>
+    <input type="text" id="placebirth" name="placebirth" required />
+
+    <label for="birthdate">Birthdate</label>
+    <input type="date" id="birthdate" name="birthdate" required />
+
+    <label>Gender</label>
+    <div class="gender-group">
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+    </div>
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address" rows="4" required></textarea>
+
+    <input type="submit" value="Save" />
+    <input type="reset" value="Clear" />
+  </form>
+</body>
+</html>

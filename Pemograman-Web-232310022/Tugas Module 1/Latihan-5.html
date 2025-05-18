@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px dotted rgba(0, 0, 0, 0.4);
+      padding: 20px 30px;
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: #fff;
+      color: #222;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .first-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    .category {
+      flex: 1 1 300px;
+      border: 3px solid rgb(1, 1, 140);
+      border-radius: 8px;
+      padding: 20px;
+      box-sizing: border-box;
+      min-width: 280px;
+      background: #f9f9f9;
+    }
+
+    .category .title {
+      font-weight: bold;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 25px;
+      color: rgb(1, 1, 140);
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 18px;
+      transition: background-color 0.3s ease;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: default;
+    }
+
+    .logo-title:hover {
+      background-color: rgba(1, 1, 140, 0.1);
+    }
+
+    .logo img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .title-logo {
+      font-size: 22px;
+      font-weight: 600;
+      color: #111;
+      user-select: none;
+    }
+
+    iframe {
+      border: none;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Programming Language Based on Career</h2>
+  <div class="first-content">
+    <div class="category">
+      <div class="title">Front-end Web Development</div>
+      <div class="logo-title">
+        <div class="logo">
+          <img src="assets/js.png" alt="JavaScript Logo" />
+        </div>
+        <div class="title-logo">JavaScript</div>
+      </div>
+      <div class="logo-title">
+        <div class="logo">
+          <img src="assets/elm.png" alt="Elm Logo" />
+        </div>
+        <div class="title-logo">Elm</div>
+      </div>
+      <div class="logo-title">
+        <div class="logo">
+          <img src="assets/ts.png" alt="TypeScript Logo" />
+        </div>
+        <div class="title-logo">TypeScript</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <div class="title">Back-end Web Development</div>
+      <div class="logo-title">
+        <div class="logo">
+          <img src="assets/js.png" alt="JavaScript Logo" />
+        </div>
+        <div class="title-logo">JavaScript</div>
+      </div>
+      <div class="logo-title">
+        <div class="logo">
+          <img src="assets/scala.png" alt="Scala Logo" />
+        </div>
+        <div class="title-logo">Scala</div>
+      </div>
+      <div class="logo-title">
+        <div class="logo">
+          <img src="assets/go.png" alt="Go Logo" />
+        </div>
+        <div class="title-logo">Go</div>
+      </div>
+      <div class="logo-title">
+        <div class="logo">
+          <img src="assets/ruby.png" alt="Ruby Logo" />
+        </div>
+        <div class="title-logo">Ruby</div>
+      </div>
+      <div class="logo-title">
+        <div class="logo">
+          <img src="assets/py.png" alt="Python Logo" />
+        </div>
+        <div class="title-logo">Python</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <div class="title">Mobile Development</div>
+      <div class="logo-title">
+        <div class="logo">
+          <img src="assets/js.png" alt="JavaScript Logo" />
+        </div>
+        <div class="title-logo">JavaScript</div>
+      </div>
+      <div class="logo-title">
+        <div class="logo">
+          <img src="assets/java.png" alt="Java Logo" />
+        </div>
+        <div class="title-logo">Java</div>
+      </div>
+      <div class="logo-title">
+        <div class="logo">
+          <img src="assets/o-c.png" alt="Objective C Logo" />
+        </div>
+        <div class="title-logo">Objective C</div>
+      </div>
+      <div class="logo-title">
+        <div class="logo">
+          <img src="assets/swift.png" alt="Swift Logo" />
+        </div>
+        <div class="title-logo">Swift</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Top 10 Programming Languages in 2022</h2>
+  <iframe src="Latihan-4.html" width="99%" height="700px" title="Top 10 Programming Languages"></iframe>
+
+  <h2>List of programming languages from Wikipedia</h2>
+  <iframe src="https://en.wikipedia.org/wiki/List_of_programming_languages" width="99%" height="700px" title="List of Programming Languages Wikipedia"></iframe>
+</body>
+</html>

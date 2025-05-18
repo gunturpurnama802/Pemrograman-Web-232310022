@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guntur Purnama - Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #1f1f1f;
+    }
+
+    .page1 {
+      height: 100vh;
+      background: linear-gradient(135deg, #101d42, #006eff);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+    }
+
+    header .kiri {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    header .kanan {
+      display: flex;
+      gap: 30px;
+    }
+
+    header .kanan button {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    header .kanan button:hover {
+      background: white;
+      color: #006eff;
+    }
+
+    .home {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 100px);
+      padding: 0 60px;
+      gap: 60px;
+    }
+
+    .gambar img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+    }
+
+    .nama {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .nama > div:first-child {
+      font-size: 26px;
+      color: #ffb3d1;
+    }
+
+    .nama > div:nth-child(2) {
+      font-size: 56px;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+
+    .typeJsText {
+      font-size: 28px;
+      color: #ffb3d1;
+      font-weight: 600;
+      height: 30px;
+      border-right: 2px solid white;
+      margin-bottom: 20px;
+    }
+
+    .sosmed {
+      display: flex;
+      gap: 15px;
+    }
+
+    .wrapper {
+      background: white;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+    }
+
+    .wrapper:hover {
+      background: #ffb3d1;
+    }
+
+    .wrapper img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .page2 {
+      background: white;
+      padding: 80px 100px;
+      text-align: justify;
+    }
+
+    .page2 p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+      }
+      .nama, .gambar {
+        width: 100%;
+      }
+      .page2 {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page1">
+    <header>
+      <div class="kiri">GunturP.</div>
+      <div class="kanan">
+        <button>Home</button>
+        <a href="#port"><button>Portfolio</button></a>
+        <a href="../Latihan-3.html"><button>Profile</button></a>
+      </div>
+    </header>
+    <div class="home">
+      <div class="gambar">
+        <img src="images/heker.png" alt="Gambar Utama" />
+      </div>
+      <div class="nama">
+        <div>Hi There, I'm</div>
+        <div>Guntur Purnama</div>
+        <div class="typeJsText" data-typetext="Blockchain Developer"></div>
+        <div class="sosmed">
+          <a href="https://www.instagram.com/gunturpurnama_/" target="_blank">
+            <div class="wrapper">
+              <img src="images/instagram.png" alt="Instagram" />
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/gunturPurnama/" target="_blank">
+            <div class="wrapper">
+              <img src="images/linkedin.png" alt="LinkedIn" />
+            </div>
+          </a>
+          <a href="https://github.com/gunturpurnama802/" target="_blank">
+            <div class="wrapper">
+              <img src="images/github.png" alt="GitHub" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page2" id="port">
+    <p>
+      Selamat datang di portofolio saya! Saya seorang Pengembang Perangkat Lunak dengan minat utama dalam menciptakan solusi digital yang inovatif dan efektif.
+      <br /><br />
+      Dalam beberapa tahun terakhir, saya telah terlibat dalam berbagai proyek, mulai dari pengembangan situs web sederhana hingga aplikasi web yang kompleks. Setiap proyek yang saya sajikan di sini mencerminkan hasil dari pembelajaran berkelanjutan, eksperimen dengan teknologi terbaru, dan kolaborasi yang produktif.
+      <br /><br />
+      Bagi saya, desain dan teknologi bukan hanya tentang estetika, tetapi juga tentang bagaimana solusi itu dapat meningkatkan pengalaman pengguna secara signifikan.
+      <br /><br />
+      Saya mengundang Anda untuk menjelajahi karya-karya saya di sini. Jika Anda tertarik untuk berkolaborasi atau memiliki pertanyaan lebih lanjut, jangan ragu untuk menghubungi saya.
+    </p>
+  </div>
+
+  <script>
+    const typeJsText = document.querySelector(".typeJsText");
+    const textArray = typeJsText.dataset.typetext.split("");
+    let counter = -1;
+
+    typeJsText.innerHTML = "";
+
+    function typeJs() {
+      if (counter < typeJsText.dataset.typetext.length) {
+        counter++;
+        typeJsText.innerHTML += typeJsText.dataset.typetext.charAt(counter);
+      } else {
+        textArray.pop();
+        typeJsText.innerHTML = textArray.join("");
+        if (textArray.length === 0) counter = -1;
+      }
+    }
+
+    setInterval(typeJs, 100);
+  </script>
+</body>
+</html>
